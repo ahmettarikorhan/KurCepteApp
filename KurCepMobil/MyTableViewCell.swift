@@ -14,4 +14,6 @@ class MyTableViewCell:UITableViewCell{
     @IBOutlet weak var currencyIcon: UIImageView!
     @IBOutlet weak var fromLabel: UILabel!
     @IBOutlet weak var toLabel: UILabel!
+    
+    
 }
