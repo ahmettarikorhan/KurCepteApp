@@ -16,6 +16,7 @@
 		0438156A2C7F1DCC0061467E /* ConvertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043815692C7F1DCC0061467E /* ConvertViewController.swift */; };
 		0438156C2C7F21400061467E /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438156B2C7F21400061467E /* MyTableViewCell.swift */; };
 		0438156E2C7F3F810061467E /* CurrencyModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438156D2C7F3F810061467E /* CurrencyModal.swift */; };
+		043815702C86F1BF0061467E /* CurrencyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438156F2C86F1BF0061467E /* CurrencyResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		043815692C7F1DCC0061467E /* ConvertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertViewController.swift; sourceTree = "<group>"; };
 		0438156B2C7F21400061467E /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		0438156D2C7F3F810061467E /* CurrencyModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModal.swift; sourceTree = "<group>"; };
+		0438156F2C86F1BF0061467E /* CurrencyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				043815692C7F1DCC0061467E /* ConvertViewController.swift */,
 				0438155B2C7F156B0061467E /* Main.storyboard */,
 				0438156B2C7F21400061467E /* MyTableViewCell.swift */,
+				0438156F2C86F1BF0061467E /* CurrencyResponse.swift */,
 				0438156D2C7F3F810061467E /* CurrencyModal.swift */,
 				0438155E2C7F156D0061467E /* Assets.xcassets */,
 				043815602C7F156D0061467E /* LaunchScreen.storyboard */,
@@ -153,6 +156,7 @@
 				043815562C7F156B0061467E /* AppDelegate.swift in Sources */,
 				0438156A2C7F1DCC0061467E /* ConvertViewController.swift in Sources */,
 				043815582C7F156B0061467E /* SceneDelegate.swift in Sources */,
+				043815702C86F1BF0061467E /* CurrencyResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

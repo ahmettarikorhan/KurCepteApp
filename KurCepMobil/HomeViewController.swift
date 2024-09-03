@@ -23,7 +23,7 @@ class HomeViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         tableView.dataSource = self
         tableView.delegate = self
         
-        let parameters = ["access_key":"229fe4c9315234288063cd59c754c0c2"]
+        let parameters = ["access_key":"8d741de7633c622f820e145e194c0063"]
         var urlComponents = URLComponents(string: "https://data.fixer.io/api/latest")!
         
          urlComponents.queryItems = parameters.map{URLQueryItem(name: $0.key,value: $0.value)}
@@ -37,10 +37,28 @@ class HomeViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         request.httpMethod = "GET"
         
         let task = URLSession.shared.dataTask(with: request) {data,response,error in
+            
+            if let error = error {
+                print(error)
+            }
+            guard let httpResponse = response as? HTTPURLResponse,httpResponse.statusCode == 200 else{
+                print("ınvalid responce code")
+                return
+            }
+            
             if let data = data {
                 if let dataString = String(data: data, encoding: .utf8){
                     print("Data is in String: \(dataString)")
                 }
+                do {
+                    var jsonDecoder = JSONDecoder()
+                    let response:Response = try jsonDecoder.decode(Response.self, from: data)
+                    print(response.success)
+                }catch let errorInparsing{
+                    print("error in parsing."+errorInparsing.localizedDescription)
+                }
+                
+                
             }
             
         }
